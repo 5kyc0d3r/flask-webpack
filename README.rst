@@ -169,7 +169,7 @@ Contributors
 - Nick Janetakis <nick.janetakis@gmail.com>
 - 5kyc0d3r <https://github.com/5kyc0d3r>
 
-.. |PyPI version| image:: https://badge.fury.io/py/flask-webpack.png
+.. |PyPI version| image:: https://badge.fury.io/py/Flask-Webpack.svg
    :target: https://pypi.python.org/pypi/flask-webpack-fork
-.. |Build status| image:: https://secure.travis-ci.org/nickjj/flask-webpack.png
+.. |Build status| image:: https://api.travis-ci.org/5kyc0d3r/flask-webpack-fork.png
    :target: https://travis-ci.org/5kyc0d3r/flask-webpack-fork
