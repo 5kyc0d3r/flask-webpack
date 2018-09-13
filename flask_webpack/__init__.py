@@ -61,9 +61,9 @@ class Webpack(object):
                 if app.config['WEBPACK_ASSETS_URL']:
                     self.assets_url = app.config['WEBPACK_ASSETS_URL']
                 else:
-                    self.assets_url = stats['publicPath']
+                    self.assets_url = ''
 
-                self.assets = stats['assets']
+                self.assets = stats
         except IOError:
             raise RuntimeError(
                 "Flask-Webpack requires 'WEBPACK_MANIFEST_PATH' to be set and "
