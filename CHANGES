@@ -1,6 +1,13 @@
 Flask-Webpack changelog
 =======================
 
+Version 0.1.1
+-------------
+
+- Patched to work with webpack-manifest-plugin since
+  manifest-revision-webpack-plugin only added entry point
+  assets to the manifest.
+
 Version 0.1.0
 -------------
 
