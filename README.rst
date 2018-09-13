@@ -1,5 +1,7 @@
 |PyPI version| |Build status|
 
+**Note:** This is a fork of the official Flask-Webpack plugin. It is patched to work with the `webpack-manifest-plugin <https://github.com/danethurber/webpack-manifest-plugin>`_ because the `manifest-revision-webpack-plugin <https://github.com/nickjj/manifest-revision-webpack-plugin>`_ by Nickjj only resolved assets added as entry point scripts in the webpack.config.js file.
+
 What is Flask-Webpack?
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -65,7 +67,7 @@ it more than argument it will create as many tags as needed.
 Installation
 ^^^^^^^^^^^^
 
-``pip install Flask-Webpack``
+``pip install Flask-Webpack-Fork``
 
 Quick start
 ^^^^^^^^^^^
@@ -88,9 +90,7 @@ How does it work?
 -----------------
 
 It expects you to have built a manifest file and it handles the rest. You can
-build this manifest file using a plugin I wrote for Webpack. You can find that
-plugin `here <https://github.com/nickjj/manifest-revision-webpack-plugin>`_.
-
+build this manifest file with the `webpack-manifest-plugin <https://github.com/danethurber/webpack-manifest-plugin>`_.
 This process is done automatically upon starting the dev asset server or building
 your assets to prepare for a production release. All of that is taken care of in
 the ``webpack.config.js`` file.
@@ -167,8 +167,9 @@ Contributors
 ^^^^^^^^^^^^
 
 - Nick Janetakis <nick.janetakis@gmail.com>
+- 5kyc0d3r <https://github.com/5kyc0d3r>
 
 .. |PyPI version| image:: https://badge.fury.io/py/flask-webpack.png
-   :target: https://pypi.python.org/pypi/flask-webpack
+   :target: https://pypi.python.org/pypi/flask-webpack-fork
 .. |Build status| image:: https://secure.travis-ci.org/nickjj/flask-webpack.png
-   :target: https://travis-ci.org/nickjj/flask-webpack
+   :target: https://travis-ci.org/5kyc0d3r/flask-webpack-fork
